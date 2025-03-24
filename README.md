@@ -5,14 +5,14 @@ Designed to support multi-user organizations with authentication, project groupi
 
 ---
 
-##📝 Focus of This Implementation
+📝 Focus of This Implementation
 This project intentionally focuses on the backend architecture, database design, and API implementation.
 
-##✅ The backend is fully implemented and tested
+✅ The backend is fully implemented and tested
 
-##⚠️ The frontend and test files are present from the original forked repo, but were not updated to match the extended functionality (organizations, projects, invite codes, etc.)
+⚠️ The frontend and test files are present from the original forked repo, but were not updated to match the extended functionality (organizations, projects, invite codes, etc.)
 
-##🎯 This decision was made to maximize depth in backend logic, security, and data structure within the time constraints of the assessment
+🎯 This decision was made to maximize depth in backend logic, security, and data structure within the time constraints of the assessment
 
 ---
 
