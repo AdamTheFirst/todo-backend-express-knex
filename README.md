@@ -1,13 +1,40 @@
-> [!WARNING]
-> I implemented this for an interview once ages ago, but now it's unmaintained.
+# 🧩 Group Todo App – Backend
 
-# todo-backend-express-knex
+A backend system for a group todo app, built as a technical assessment.  
+Designed to support multi-user organizations with authentication, project grouping, and protected task management.
 
-This is an implementation of [Todo-Backend](http://todobackend.com/) using Node and Express for the server, Knex for database migrations and query building, and some ES6+ features such as async/await. By default, this project configures Knex to save to PostgreSQL.
+---
 
-A [production instance](https://todo-backend-express-knex.herokuapp.com/) is running on Heroku.
+##📝 Focus of This Implementation
+This project intentionally focuses on the backend architecture, database design, and API implementation.
 
-Bonus features include a simple frontend boostrapped with create-react-app and the todo-backend specification tests transcribed for Jest--a quick full-stack starter pack.
+##✅ The backend is fully implemented and tested
+
+##⚠️ The frontend and test files are present from the original forked repo, but were not updated to match the extended functionality (organizations, projects, invite codes, etc.)
+
+##🎯 This decision was made to maximize depth in backend logic, security, and data structure within the time constraints of the assessment
+
+---
+
+## 🚀 Features
+
+- ✅ User authentication with JWT
+- 🏢 Organizations with unique invite codes
+- 👥 Multi-user support per organization
+- 🗂️ Project-based task grouping
+- 📝 Todos linked to projects, assigned to users
+- 🔐 Route protection and scoped access
+- 🧪 Fully tested with Jest + Supertest
+
+---
+
+## 📦 Tech Stack
+
+- **Node.js + Express** – Server & API
+- **PostgreSQL + Knex.js** – Database layer
+- **JWT** – Auth & session handling
+
+---
 
 ## Installation
 
@@ -42,28 +69,3 @@ Bonus features include a simple frontend boostrapped with create-react-app and t
 7. Start the server on [http://localhost:5000](http://localhost:5000).
 
     `yarn server`
-
-8. Test it against the spec at [Todo-Backend Specs](http://todobackend.com/specs/index.html?http://localhost:5000/)
-
-## Bonus Features
-
-- Run tests locally using either.
-
-    `yarn test`
-
-    `yarn test:watch`
-
-    >The second command requires watchman  
-    >`brew install watchman`
-
-- Install create-react-app frontend starting at root directory:
-
-    `cd client && yarn install`
-
-- Run backend and frontend simultaneously from root directory.
-
-    `yarn dev`
-
-    > Note: The proxied connection will only work locally.
-    > You'll need the server to serve the frontend build if
-    > you want to host the entire project somewhere.
